@@ -1,0 +1,60 @@
+body {
+  color: $default;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Rubik, Roboto, sans-serif;
+  font-weight: 400;
+  background-color: $backgr;
+
+  @include r($r-tm) {
+    body.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.lock {
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.logo {
+  transition: 0.3s ease-in-out;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}

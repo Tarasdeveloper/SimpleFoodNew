@@ -1,16 +1,16 @@
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-   box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ul,
 ol {
-   padding: 0;
+  padding: 0;
 }
 
 body,
@@ -27,31 +27,39 @@ li,
 figure,
 figcaption,
 blockquote {
-   margin: 0;
+  margin: 0;
 }
 
 ul {
-   list-style: none;
+  list-style: none;
 }
 
 img {
-   max-width: 100%;
-   display: block;
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
 }
 
 input,
 button,
 textarea,
 select {
-   font: inherit;
+  font: inherit;
 }
 
 a {
-   text-decoration: none;
-   color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 html,
 body {
-   height: 100%;
+  min-height: 100%;
 }
