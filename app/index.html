@@ -28,9 +28,7 @@
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <!-- <svg class="footer-top__plane">
-  <use xlink:href="images/sprite.svg#plane"></use>
-</svg>Подписаться -->
+
   <body>
     <div class="wrapper">
       <header class="header">
@@ -40,7 +38,7 @@
               <img
                 class="logo__img"
                 src="images/logo.svg"
-                width="208"
+                width="200"
                 height="39"
                 alt="logo"
               />
@@ -57,12 +55,12 @@
               </li>
             </ul>
             <div class="header__actions">
-              <button class="btn_sm icon icon--search">
+              <button class="btn-sm icon icon--search">
                 <span class="sr-only"> Поиск товаров </span>
               </button>
-              <button class="btn_sm icon icon--cart">
+              <button class="btn-sm icon header__btn icon--cart">
                 <span class="sr-only"> Товары в корзине </span>
-                <span class="btn-counter"></span>
+                <span class="btn-counter">4</span>
               </button>
             </div>
           </nav>
@@ -71,6 +69,7 @@
 
       <main class="main">
         <h1 class="sr-only">Доставка продуктов</h1>
+
         <section
           class="hero"
           style="background-image: url('images/scooter.png')"
@@ -92,6 +91,7 @@
             </div>
           </div>
         </section>
+
         <section class="popular">
           <div class="container">
             <h2 class="title">Популярные категории</h2>
@@ -170,7 +170,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger2.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -192,7 +192,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger3.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -214,7 +214,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger4.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -236,7 +236,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger5.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -282,7 +282,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger2.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -304,7 +304,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger3.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -326,7 +326,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger4.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -348,7 +348,7 @@
                   <a class="product-card__link" href="">
                     <img
                       class="product-card__img"
-                      src="images/burger1.jpg"
+                      src="images/burger5.jpg"
                       width="140"
                       height="140"
                       alt="Чизбургер"
@@ -451,10 +451,42 @@
               <address class="contacts">
                 <ul class="contacts__list">
                   <li class="contacts__item">
-                    <a class="contacts__link" href=""></a>
+                    <a class="contacts__link icon icon--address" href=""
+                      >ул. Т.Г.Шевченко, 1</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a
+                      class="contacts__link icon icon--phone"
+                      href="tel:380501112233"
+                      >380501112233</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a
+                      class="contacts__link icon icon--email"
+                      href="mailto:support@sfood.com"
+                      >support@sfood.com</a
+                    >
                   </li>
                 </ul>
                 <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" href="">
+                      <span
+                        class="social__icon"
+                        style="-webkit-mask-image: url(); mask-image: url()"
+                      ></span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="">
+                      <span
+                        class="social__icon"
+                        style="-webkit-mask-image: url(); mask-image: url()"
+                      ></span>
+                    </a>
+                  </li>
                   <li class="social__item">
                     <a class="social__link" href="">
                       <span
@@ -468,8 +500,9 @@
             </div>
           </section>
         </div>
+        <div class="footer__bottom">&copy; 2022 Simple Food</div>
       </footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

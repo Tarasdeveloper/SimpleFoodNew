@@ -1,15 +1,193 @@
 body {
-  color: $default;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  background-color: $c-white;
+  color: $c-dark;
+
+  // @include r($r-tm) {
+  //   body.lock {
+  //     overflow: hidden;
+  //   }
+  // }
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.icon {
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    min-width: 24px;
+    height: 24px;
+    background-color: $c-darkBlue-900;
+    mask-image: url('../images/sprite.svg#icon-check');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background-color 0.3 ease-in-out;
+  }
+
+  &--cart {
+    &::before {
+      mask-image: url('../images/icons/icon-cart.svg');
+    }
+  }
+
+  &--search {
+    &::before {
+      mask-image: url('../images/icons/icon-search.svg');
+    }
+  }
+
+  &:hover {
+    &::before {
+      background-color: $c-white;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $c-darkBlue-900;
+    }
+  }
+}
+
+.btn-sm {
+  position: relative;
+  min-width: 44px;
+  height: 44px;
+  padding: 5px;
+  background-color: $c-white;
+  border-radius: 5px;
+  border-color: transparent;
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    outline-color: rgba($c-orange-900, 0.7);
+    background-color: rgba($c-orange-900, 0.1);
+  }
+
+  &:hover {
+    background-color: $c-orange-900;
+  }
+
+  &:active {
+    outline-color: transparent;
+    background-color: rgba($c-orange-900, 0.1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: $c-orange-900;
+  color: $c-white;
+  padding: 12px 32px;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  outline: 2px solid transparent;
+  transition: color 0.3s ease-in-out, outline-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:focus {
+    background-color: rgba($c-orange-900, 0.1);
+    color: $c-orange-900;
+    outline-color: rgba($c-orange-900, 0.7);
+  }
+
+  &:hover {
+    background-color: $c-white;
+    color: $c-orange-900;
+    box-shadow: 0 5px 12px 0 rgba($c-orange-900, 0.2);
+  }
+
+  &:active {
+    background-color: rgba($c-orange-900, 0.1);
+    color: $c-orange-900;
+    outline-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.btn-counter {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  min-width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  color: $c-white;
+  font-size: 10px;
+  line-height: 1.4;
+  background-color: $c-orange-900;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.td-link {
   font-size: 20px;
   line-height: 1.5;
-  font-family: Rubik, Roboto, sans-serif;
-  font-weight: 400;
-  background-color: $backgr;
+  color: $c-darkBlue-900;
+  outline: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: outline-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    text-shadow 0.4s ease-in-out;
 
-  @include r($r-tm) {
-    body.lock {
-      overflow: hidden;
-    }
+  &:focus {
+    outline-color: rgba($c-orange-900, 0.7);
+  }
+
+  &:hover {
+    color: $c-orange-900;
+  }
+
+  &:active {
+    text-shadow: 2px 2px 5px rgba($c-dark, 0.5);
+    outline-color: transparent;
+  }
+}
+
+.text-orange {
+  color: $c-orange-900;
+}
+
+.logo {
+  display: block;
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s ease-in-out, opacity 0.4s ease-in-out;
+  border-radius: 5px;
+
+  &:focus {
+    outline-color: rgba($c-orange-900, 0.7);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+    outline-color: transparent;
+  }
+
+  &__img {
+    object-fit: contain;
   }
 }
 
@@ -27,19 +205,10 @@ body {
   }
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .main {
   flex-grow: 1;
 }
 
-.logo {
-  transition: 0.3s ease-in-out;
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -57,4 +226,19 @@ svg path {
   fill: inherit;
   stroke: inherit;
   stroke-width: inherit;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition-delay: 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }

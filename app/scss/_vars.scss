@@ -1,20 +1,28 @@
-$accent: #ff6838;
-$default: #31352b;
-$title: #363853;
-$hover: #ff7a50;
-$hovershadow: rgba(255, 122, 80, 0.1);
-$boxshadow: rgba(255, 104, 56, 0.7);
-$active: #fff2ed;
-$backgr: #f9faff;
-$shadows: #ececec;
-$wt: #ffffff;
-$pale: rgba(255, 255, 255, 0.01);
-$boxshadowpale: rgba(255, 104, 56, 0.2);
-$footer: #c2c2c2;
-$boxmobile: rgba(249, 250, 255, 0.85);
-$footerborder: rgba(194, 194, 194, 0.2);
+// $accent: #ff6838;
+// $default: #31352b;
+// $title: #363853;
+// $hover: #ff7a50;
+// $hovershadow: rgba(255, 122, 80, 0.1);
+// $boxshadow: rgba(255, 104, 56, 0.7);
+// $active: #fff2ed;
+// $backgr: #f9faff;
+// $shadows: #ececec;
+// $wt: #ffffff;
+// $pale: rgba(255, 255, 255, 0.01);
+// $boxshadowpale: rgba(255, 104, 56, 0.2);
+// $footer: #c2c2c2;
+// $boxmobile: rgba(249, 250, 255, 0.85);
+// $footerborder: rgba(194, 194, 194, 0.2);
 
-$r-dt: 1155;
+$c-orange-900: #ff6838;
+$c-gray: #c2c2c2;
+$c-silver-200: #ececec;
+$c-sliver-100: #f9faff;
+$c-darkBlue-900: #363853;
+$c-dark: #31352b;
+$c-white: #ffffff;
+
+$r-dt: 1200;
 $r-tb: 992;
 $r-tm: 768;
 $r-ph: 576;
@@ -47,3 +55,11 @@ $r-ph: 576;
   }
 }
 //   @include line-clamp(3);
+
+// _________Шрифт__________
+@mixin fz($max, $min, $wmax: 1920, $wmin: 375) {
+  font-size: calc(
+    #{$min}px + (#{$max} - #{$min}) *
+      ((100vw - #{$wmin}px) / (#{$wmax} - #{$wmin}))
+  );
+}

@@ -31,7 +31,7 @@ blockquote {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 img {
@@ -39,8 +39,11 @@ img {
   display: block;
 }
 
+label {
+  display: block;
+}
+
 button {
-  padding: 0;
   cursor: pointer;
   background-color: transparent;
   color: inherit;
@@ -52,11 +55,18 @@ button,
 textarea,
 select {
   font: inherit;
+  appearance: none;
+  outline: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+address {
+  font-style: normal;
 }
 
 html,
