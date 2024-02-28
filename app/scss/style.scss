@@ -1,6 +1,10 @@
+@import 'reset';
 @import 'vars';
 @import 'fonts';
-@import 'reset';
 @import 'global';
+
 @import 'parts/header';
 @import 'parts/hero-section';
+@import 'parts/popular-section';
+@import 'parts/categories';
+@import 'parts/product-card';
