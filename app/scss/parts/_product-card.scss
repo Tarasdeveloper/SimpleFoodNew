@@ -28,6 +28,7 @@
 
   &__title {
     font-size: 15px;
+    @include line-clamp(2);
   }
 
   &__img {
@@ -40,7 +41,7 @@
   &__price {
     font-size: 15px;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.2;
     color: $c-darkBlue-900;
     order: 3;
     margin-top: auto;

@@ -100,6 +100,7 @@
                 <button
                   class="categories-nav__btn icon icon--burger"
                   type="button"
+                  data-filter="category-1"
                 >
                   Бургеры
                 </button>
@@ -108,6 +109,7 @@
                 <button
                   class="categories-nav__btn icon icon--pizza"
                   type="button"
+                  data-filter="category-2"
                 >
                   Пицца
                 </button>
@@ -116,6 +118,7 @@
                 <button
                   class="categories-nav__btn icon icon--sandwich"
                   type="button"
+                  data-filter="category-3"
                 >
                   Сендвичи
                 </button>
@@ -124,6 +127,7 @@
                 <button
                   class="categories-nav__btn icon icon--asian"
                   type="button"
+                  data-filter="category-4"
                 >
                   Азиатская кухня
                 </button>
@@ -132,6 +136,7 @@
                 <button
                   class="categories-nav__btn icon icon--sets"
                   type="button"
+                  data-filter="category-5"
                 >
                   Cеты
                 </button>
@@ -139,9 +144,9 @@
             </ul>
 
             <ul class="categories-list popular__list">
-              <li class="categories-list__item">
+              <li class="categories-list__item category-1">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">
                       Чизбургер с листьями салата
                     </h3>
@@ -163,9 +168,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-1">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Бифбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -185,9 +190,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-2">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Королевский чизбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -207,9 +212,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-2">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Черный гамбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -229,9 +234,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-3">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Чикен бургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -251,9 +256,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-3">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">
                       Чизбургер с листьями салата
                     </h3>
@@ -275,9 +280,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-4">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Бифбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -297,9 +302,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-4">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Королевский чизбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -319,9 +324,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-5">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Черный гамбургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -341,9 +346,9 @@
                   </button>
                 </article>
               </li>
-              <li class="categories-list__item">
+              <li class="categories-list__item category-5">
                 <article class="product-card">
-                  <a class="product-card__link">
+                  <a class="product-card__link" href="">
                     <h3 class="product-card__title">Чикен бургер</h3>
                   </a>
                   <a class="product-card__link" href="">
@@ -410,28 +415,16 @@
               <h3 class="sr-only">Навигация по сайту</h3>
               <ul class="menu footer__menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="">О нас</a>
+                  <a class="menu__link" href="">Как это работает</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="">Новости</a>
+                  <a class="menu__link" href="">Продукты</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="">Партнёры</a>
+                  <a class="menu__link" href="">Блюда</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="">ЧаВо</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="">О нас</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="">Новости</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="">Партнёры</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="">ЧаВо</a>
+                  <a class="menu__link" href="">Меню</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="">О нас</a>
@@ -444,9 +437,22 @@
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="">ЧаВо</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Скачать приложение</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Что нового?</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Карта сайта</a>
                 </li>
               </ul>
             </div>
+
             <div class="footer__contacts">
               <h3 class="sr-only">Контакты, соцсети</h3>
               <address class="contacts">
@@ -478,25 +484,36 @@
                       <span class="sr-only">Страница в фейсбук</span>
                       <span
                         class="social__icon"
-                        style="-webkit-mask-image: url(); mask-image: url()"
+                        style="
+                          -webkit-mask-image: url('images/sprite.svg#icon-facebook');
+                          mask-image: url('images/sprite.svg#icon-facebook');
+                        "
                       ></span>
                     </a>
                   </li>
+
                   <li class="social__item">
                     <a class="social__link" href="">
                       <span class="sr-only">Страница в инстаграм</span>
                       <span
                         class="social__icon"
-                        style="-webkit-mask-image: url(); mask-image: url()"
+                        style="
+                          -webkit-mask-image: url('images/sprite.svg#icon-twitter');
+                          mask-image: url('images/sprite.svg#icon-twitter');
+                        "
                       ></span>
                     </a>
                   </li>
+
                   <li class="social__item">
                     <a class="social__link" href="">
                       <span class="sr-only">Страница в твиттер</span>
                       <span
                         class="social__icon"
-                        style="-webkit-mask-image: url(); mask-image: url()"
+                        style="
+                          -webkit-mask-image: url('images/sprite.svg#icon-instagram');
+                          mask-image: url('images/sprite.svg#icon-instagram');
+                        "
                       ></span>
                     </a>
                   </li>
@@ -505,7 +522,7 @@
             </div>
           </section>
         </div>
-        <div class="footer__bottom">&copy; 2022 Simple Food</div>
+        <div class="footer__bottom">&copy; 2024 Simple Food</div>
       </footer>
     </div>
     <script src="js/main.min.js"></script>

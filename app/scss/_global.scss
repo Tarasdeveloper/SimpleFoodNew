@@ -79,6 +79,26 @@ body {
       mask-image: url('../images/icons/icon-category-dish.svg');
     }
   }
+  &--send {
+    &::before {
+      mask-image: url('../images/icons/icon-telegram.svg');
+    }
+  }
+  &--address {
+    &::before {
+      mask-image: url('../images/icons/icon-location.svg');
+    }
+  }
+  &--phone {
+    &::before {
+      mask-image: url('../images/icons/icon-call.svg');
+    }
+  }
+  &--email {
+    &::before {
+      mask-image: url('../images/icons/icon-message.svg');
+    }
+  }
 
   &:hover {
     &::before {
@@ -151,6 +171,7 @@ body {
   }
 
   &--md {
+    letter-spacing: 0;
     font-size: 14px;
     padding: 7px 14px;
   }
