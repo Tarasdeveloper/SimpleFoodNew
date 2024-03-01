@@ -99,6 +99,21 @@ body {
       mask-image: url('../images/icons/icon-message.svg');
     }
   }
+  &--delivery {
+    &::before {
+      mask-image: url('../images/icons/icon-timer.svg');
+    }
+  }
+  &--courier {
+    &::before {
+      mask-image: url('../images/icons/icon-delivery.svg');
+    }
+  }
+  &--build {
+    &::before {
+      mask-image: url('../images/icons/icon-restorant.svg');
+    }
+  }
 
   &:hover {
     &::before {
