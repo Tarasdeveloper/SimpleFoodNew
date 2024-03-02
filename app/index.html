@@ -26,6 +26,10 @@
     <link rel="icon" href="favicons/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
     <link rel="icon" type="image/png" href="favicons/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -55,7 +59,10 @@
               </li>
             </ul>
             <div class="header__actions">
-              <button class="btn-sm icon icon--search" type="button">
+              <button
+                class="btn-sm icon header__btn icon--search"
+                type="button"
+              >
                 <span class="sr-only"> Поиск товаров </span>
               </button>
               <button class="btn-sm icon header__btn icon--cart" type="button">
@@ -414,7 +421,7 @@
           <div class="container">
             <h2 class="title">Лучшие рестораны</h2>
 
-            <ul class="resto__list">
+            <ul class="resto__list cols">
               <li class="resto__item">
                 <article class="content-card">
                   <figure class="content-card__head">
@@ -608,105 +615,124 @@
           <div class="container">
             <h2 class="title">Отзывы клиентов</h2>
 
-            <div class="reviews__slider">
-              <ul class="reviews__list">
-                <li class="reviews__item">
+            <div class="reviews__slider swiper">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
                   <figure class="reviews-card">
                     <img
                       class="reviews-card__img"
                       src="images/blockquote.jpg"
                       alt="фото клиента"
                     />
-                    <blockquote class="reviews-card__text">
-                      <p>
-                        SimpleFood - одна из лучших служб доставки продуктов из
-                        ресторанов в городе. Очень удобный сайт и приложение. Их
-                        доставщики очень вежливы и пунктуальны. Компания часто
-                        проводит акции и дарит скидки на доставку - однозначно
-                        рекомендую!
-                      </p>
-                    </blockquote>
-                    <figcaption class="reviews-card__info">
-                      Дарья
-                      <span class="reviews-card__details">
-                        Ценитель вкусной еды
-                      </span>
-                    </figcaption>
+                    <div class="reviews-card__content">
+                      <blockquote class="reviews-card__text">
+                        <p>
+                          SimpleFood - одна из лучших служб доставки продуктов
+                          из ресторанов в городе. Очень удобный сайт и
+                          приложение. Их доставщики очень вежливы и пунктуальны.
+                          Компания часто проводит акции и дарит скидки на
+                          доставку - однозначно рекомендую!
+                        </p>
+                      </blockquote>
+                      <figcaption class="reviews-card__info">
+                        <div class="reviews-card__name">Дарья</div>
+                        <span class="reviews-card__details">
+                          Ценитель вкусной еды
+                        </span>
+                      </figcaption>
+                    </div>
                   </figure>
                 </li>
-                <li class="reviews__item">
+                <li class="reviews__item swiper-slide">
                   <figure class="reviews-card">
                     <img
                       class="reviews-card__img"
                       src="images/blockquote.jpg"
                       alt="фото клиента"
                     />
-                    <blockquote class="reviews-card__text">
-                      <p>
-                        SimpleFood - одна из лучших служб доставки продуктов из
-                        ресторанов в городе. Очень удобный сайт и приложение. Их
-                        доставщики очень вежливы и пунктуальны. Компания часто
-                        проводит акции и дарит скидки на доставку - однозначно
-                        рекомендую!
-                      </p>
-                    </blockquote>
-                    <figcaption class="reviews-card__info">
-                      Дарья
-                      <span class="reviews-card__details">
-                        Ценитель вкусной еды
-                      </span>
-                    </figcaption>
+                    <div class="reviews-card__content">
+                      <blockquote class="reviews-card__text">
+                        <p>
+                          SimpleFood - одна из лучших служб доставки продуктов
+                          из ресторанов в городе. Очень удобный сайт и
+                          приложение. Их доставщики очень вежливы и пунктуальны.
+                          Компания часто проводит акции и дарит скидки на
+                          доставку - однозначно рекомендую!
+                        </p>
+                      </blockquote>
+                      <figcaption class="reviews-card__info">
+                        <div class="reviews-card__name">Дарья</div>
+                        <span class="reviews-card__details">
+                          Ценитель вкусной еды
+                        </span>
+                      </figcaption>
+                    </div>
                   </figure>
                 </li>
-                <li class="reviews__item">
+                <li class="reviews__item swiper-slide">
                   <figure class="reviews-card">
                     <img
                       class="reviews-card__img"
                       src="images/blockquote.jpg"
                       alt="фото клиента"
                     />
-                    <blockquote class="reviews-card__text">
-                      <p>
-                        SimpleFood - одна из лучших служб доставки продуктов из
-                        ресторанов в городе. Очень удобный сайт и приложение. Их
-                        доставщики очень вежливы и пунктуальны. Компания часто
-                        проводит акции и дарит скидки на доставку - однозначно
-                        рекомендую!
-                      </p>
-                    </blockquote>
-                    <figcaption class="reviews-card__info">
-                      Дарья
-                      <span class="reviews-card__details">
-                        Ценитель вкусной еды
-                      </span>
-                    </figcaption>
+                    <div class="reviews-card__content">
+                      <blockquote class="reviews-card__text">
+                        <p>
+                          SimpleFood - одна из лучших служб доставки продуктов
+                          из ресторанов в городе. Очень удобный сайт и
+                          приложение. Их доставщики очень вежливы и пунктуальны.
+                          Компания часто проводит акции и дарит скидки на
+                          доставку - однозначно рекомендую!
+                        </p>
+                      </blockquote>
+                      <figcaption class="reviews-card__info">
+                        <div class="reviews-card__name">Дарья</div>
+                        <span class="reviews-card__details">
+                          Ценитель вкусной еды
+                        </span>
+                      </figcaption>
+                    </div>
                   </figure>
                 </li>
-                <li class="reviews__item">
+                <li class="reviews__item swiper-slide">
                   <figure class="reviews-card">
                     <img
                       class="reviews-card__img"
                       src="images/blockquote.jpg"
                       alt="фото клиента"
                     />
-                    <blockquote class="reviews-card__text">
-                      <p>
-                        SimpleFood - одна из лучших служб доставки продуктов из
-                        ресторанов в городе. Очень удобный сайт и приложение. Их
-                        доставщики очень вежливы и пунктуальны. Компания часто
-                        проводит акции и дарит скидки на доставку - однозначно
-                        рекомендую!
-                      </p>
-                    </blockquote>
-                    <figcaption class="reviews-card__info">
-                      Дарья
-                      <span class="reviews-card__details">
-                        Ценитель вкусной еды
-                      </span>
-                    </figcaption>
+                    <div class="reviews-card__content">
+                      <blockquote class="reviews-card__text">
+                        <p>
+                          SimpleFood - одна из лучших служб доставки продуктов
+                          из ресторанов в городе. Очень удобный сайт и
+                          приложение. Их доставщики очень вежливы и пунктуальны.
+                          Компания часто проводит акции и дарит скидки на
+                          доставку - однозначно рекомендую!
+                        </p>
+                      </blockquote>
+                      <figcaption class="reviews-card__info">
+                        <div class="reviews-card__name">Дарья</div>
+                        <span class="reviews-card__details">
+                          Ценитель вкусной еды
+                        </span>
+                      </figcaption>
+                    </div>
                   </figure>
                 </li>
               </ul>
+              <div class="reviews__actions">
+                <button
+                  class="reviews__btn reviews__btn--prev"
+                  type="button"
+                ></button>
+                <div class="reviews__dots"></div>
+                <button
+                  class="reviews__btn reviews__btn--next"
+                  type="button"
+                ></button>
+              </div>
             </div>
           </div>
         </section>
@@ -905,6 +931,7 @@
         <div class="footer__bottom">&copy; 2024 Simple Food</div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

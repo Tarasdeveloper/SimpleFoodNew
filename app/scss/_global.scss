@@ -3,8 +3,8 @@ body {
   line-height: 1.3;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
-  background-color: $c-white;
   color: $c-dark;
+  background-color: $c-sliver-100;
 
   // @include r($r-tm) {
   //   body.lock {
@@ -112,6 +112,16 @@ body {
   &--build {
     &::before {
       mask-image: url('../images/icons/icon-restorant.svg');
+    }
+  }
+  &--arrow {
+    &::before {
+      mask-image: url('../images/icons/icon-arrow-right.svg');
+    }
+  }
+  &--time {
+    &::before {
+      mask-image: url('../images/icons/icon-time.svg');
     }
   }
 
@@ -320,4 +330,10 @@ svg path {
 
 .mb-120 {
   margin-bottom: 120px;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }

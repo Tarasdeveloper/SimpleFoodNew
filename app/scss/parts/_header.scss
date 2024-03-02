@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: $c-white;
+  background-color: $c-sliver-100;
   padding: 60px 0 15px;
   border-bottom: 3px solid transparent;
   transition: padding 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -27,6 +27,7 @@
   }
 
   &__btn {
+    background-color: $c-sliver-100;
     &:hover {
       .btn-counter {
         color: $c-orange-900;
